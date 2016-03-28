@@ -1,0 +1,109 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "8d63360bed630b5768e3807cff6665bd",
+    "content-hash": "e6809bc5d23e2104e5edf9f943bc388b",
+    "packages": [
+        {
+            "name": "jpgraph/jpgraph",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/naderst/JpGraph.git",
+                "reference": "ad26df5941e847cf1255aecd2011ce16207304cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/naderst/JpGraph/zipball/ad26df5941e847cf1255aecd2011ce16207304cf",
+                "reference": "ad26df5941e847cf1255aecd2011ce16207304cf",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JpGraph": "lib/"
+                }
+            },
+            "license": [
+                "QPL 1.0"
+            ],
+            "authors": [
+                {
+                    "name": "JpGraph team"
+                }
+            ],
+            "description": "jpGraph, library to make graphs and charts",
+            "homepage": "http://jpgraph.net/",
+            "keywords": [
+                "chart",
+                "data",
+                "graph",
+                "jpgraph",
+                "pie"
+            ],
+            "support": {
+                "source": "https://github.com/naderst/JpGraph/tree/master"
+            },
+            "time": "2013-05-23 14:04:00"
+        },
+        {
+            "name": "mpdf/mpdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/naderst/mpdf.git",
+                "reference": "37d5fac9b080b0ca4a822b92279abe408b70483f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/naderst/mpdf/zipball/37d5fac9b080b0ca4a822b92279abe408b70483f",
+                "reference": "37d5fac9b080b0ca4a822b92279abe408b70483f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=4.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "mpdf.php",
+                    "classes"
+                ]
+            },
+            "license": [
+                "GPL-1.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ian Back"
+                }
+            ],
+            "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support",
+            "homepage": "http://www.mpdf1.com/mpdf/index.php",
+            "keywords": [
+                "pdf",
+                "php",
+                "utf-8"
+            ],
+            "support": {
+                "source": "https://github.com/naderst/mpdf/tree/v5.7.4a"
+            },
+            "time": "2014-12-17 11:55:19"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "mpdf/mpdf": 20,
+        "jpgraph/jpgraph": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

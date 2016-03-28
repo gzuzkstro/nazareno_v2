@@ -1,0 +1,83 @@
+#cabecera {
+    background-position: center !important;
+    position: static !important;
+}
+
+#login-area {
+    margin: 0px auto;
+    width: 230px;
+    padding: 15px 30px 15px 20px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+}
+
+body {
+    background-color: #edeff1 !important;
+}
+
+#login-area input[type="button"],
+#login-area input[type="submit"]
+{
+    width: 245px;
+}
+
+.form-group {
+    position: relative
+}
+
+i.fa.fa-user {
+    top: 10px;
+    right:1px;
+    z-index:999;
+    color: #bdc3c7;
+    position: absolute;
+}
+
+i.fa.fa-lock {
+    top: 10px;
+    right:1px;
+    z-index:999;
+    color: #bdc3c7;
+    position: absolute;
+}
+
+
+.login-usuario-icono:before {
+    content: "\ff007";
+}
+
+.login-password-icono:before {
+    content: "\ff007"
+}
+
+#username:focus + i.fa.fa-user {
+    color: #8E44AD
+}
+
+#password:focus + i.fa.fa-lock {
+    color: #8E44AD
+}
+
+#password,
+#username { 
+    padding-left: 0px;
+    padding-right: 30px;
+    width: 210px;
+}
+
+#authMessage {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 75%;position: fixed;left: 50%;margin: 30px 0 0 -37.5%;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px #000;
+    background-color: #e93838;
+}

@@ -1,0 +1,19 @@
+{
+  "require": {
+    "mpdf/mpdf": "dev-master",
+    "jpgraph/jpgraph": "dev-master"
+  },
+  "config": {
+    "vendor-dir": "app/Vendor"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/naderst/JpGraph"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/naderst/mpdf"
+    }
+  ]
+}

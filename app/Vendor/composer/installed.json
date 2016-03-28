@@ -1,0 +1,93 @@
+[
+    {
+        "name": "mpdf/mpdf",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/naderst/mpdf.git",
+            "reference": "37d5fac9b080b0ca4a822b92279abe408b70483f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/naderst/mpdf/zipball/37d5fac9b080b0ca4a822b92279abe408b70483f",
+            "reference": "37d5fac9b080b0ca4a822b92279abe408b70483f",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": ">=4.3.10"
+        },
+        "time": "2014-12-17 11:55:19",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "mpdf.php",
+                "classes"
+            ]
+        },
+        "license": [
+            "GPL-1.0+"
+        ],
+        "authors": [
+            {
+                "name": "Ian Back"
+            }
+        ],
+        "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support",
+        "homepage": "http://www.mpdf1.com/mpdf/index.php",
+        "keywords": [
+            "pdf",
+            "php",
+            "utf-8"
+        ],
+        "support": {
+            "source": "https://github.com/naderst/mpdf/tree/v5.7.4a"
+        }
+    },
+    {
+        "name": "jpgraph/jpgraph",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/naderst/JpGraph.git",
+            "reference": "ad26df5941e847cf1255aecd2011ce16207304cf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/naderst/JpGraph/zipball/ad26df5941e847cf1255aecd2011ce16207304cf",
+            "reference": "ad26df5941e847cf1255aecd2011ce16207304cf",
+            "shasum": ""
+        },
+        "time": "2013-05-23 14:04:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "JpGraph": "lib/"
+            }
+        },
+        "license": [
+            "QPL 1.0"
+        ],
+        "authors": [
+            {
+                "name": "JpGraph team"
+            }
+        ],
+        "description": "jpGraph, library to make graphs and charts",
+        "homepage": "http://jpgraph.net/",
+        "keywords": [
+            "chart",
+            "data",
+            "graph",
+            "jpgraph",
+            "pie"
+        ],
+        "support": {
+            "source": "https://github.com/naderst/JpGraph/tree/master"
+        }
+    }
+]
