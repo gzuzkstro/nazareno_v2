@@ -5,7 +5,7 @@ class BautizosController extends AppController {
     public $components = array('Paginator');
     public $helpers = array('Paginator');
     public $paginate = array(
-        'limit' => 5,
+        'limit' => 10,
         'order' => 'Bautizo.numero ASC'
     );
 
@@ -93,11 +93,12 @@ class BautizosController extends AppController {
                 $this->Session->setFlash('Ya existe un bautizo con el mismo Libro, Folio y número', 'default', array(), 'bad');
             elseif($this->Bautizo->save($this->request->data)) {
                 $this->Session->setFlash('Se ha modificado el bautizo con éxito', 'default', array(), 'good');
+                $this->redirect(array('action' => 'index'));
             } else {
                 $this->Session->setFlash('Ha ocurrido un error modificando el bautizo', 'default', array(), 'bad');
             }
     	}
-
+        
     	$this->request->data = $this->Bautizo->read();
         $this->set('paises', parent::getPaises());
         $this->set('estados', parent::getEstados());
@@ -117,6 +118,7 @@ class BautizosController extends AppController {
         $this->set('pais_selected', $this->request->data('Bautizo.pais_nacimiento'));
         $this->set('sexo_selected', $this->request->data('Bautizo.sexo'));
     	$this->render('agregar');
+        
     }
 
     function eliminar($id = null) {

@@ -69,4 +69,9 @@ $(document).ready(function(){
 	if($('#BautizoCiudadNacimiento').val() == 'Otra') {
 		$('#BautizoCiudadNacimiento').trigger('change');
 	}
+    
 });
+
+   function fillModal (content) {
+    var x = document.getElementById('p_modalContent').innerHTML = content;
+}

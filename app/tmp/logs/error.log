@@ -1,0 +1,32 @@
+2016-03-30 07:37:18 Error: Fatal Error (4): syntax error, unexpected 'fa' (T_STRING) in [C:\xampp\htdocs\nazareno_v2\app\View\Bautizos\index.ctp, line 19]
+2016-03-30 07:37:18 Error: [FatalErrorException] syntax error, unexpected 'fa' (T_STRING)
+Request URL: /nazareno_v2/bautizos/index/page:2
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-30 07:38:10 Error: Fatal Error (4): syntax error, unexpected 'fa' (T_STRING) in [C:\xampp\htdocs\nazareno_v2\app\View\Bautizos\index.ctp, line 19]
+2016-03-30 07:38:10 Error: [FatalErrorException] syntax error, unexpected 'fa' (T_STRING)
+Request URL: /nazareno_v2/bautizos/index/page:2
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-30 08:30:08 Error: [MissingViewException] View file "C:\xampp\htdocs\nazareno_v2\app\View\Bautizos\modificar.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\nazareno_v2\\app\\View\\Bautizos\\modificar.ctp',
+)
+Request URL: /nazareno_v2/bautizos/modificar/298
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\nazareno_v2\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(BautizosController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

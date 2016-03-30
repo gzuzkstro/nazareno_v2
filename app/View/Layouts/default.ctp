@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="es">
     <head>
         <title>Parroquia Jesús Nazareno</title>
@@ -22,6 +22,9 @@
             <ul>
                 <li><a href="<?php echo Router::url('/'); ?>"<?php echo $this->name == 'Pages'?'class="active"':'' ?>><i class="fa fa-home"></i> INICIO</a></li>
                 <li><a href="<?php echo Router::url('/bautizos'); ?>"<?php echo $this->name == 'Bautizos'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> BAUTIZOS</a></li>
+                <ul class="sub_menu" <?php echo $this->name == 'Bautizos'?'':'style="display:none;"' ?>>
+                    <li><a href="<?php echo Router::url('/bautizos/agregar'); ?>"><i class="fa fa-plus"></i> Agregar</a></li>
+                </ul>
                 <li><a href="<?php echo Router::url('/comuniones'); ?>"<?php echo $this->name == 'Comuniones'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> COMUNIONES</a></li>
                 <li><a href="<?php echo Router::url('/confirmaciones'); ?>"<?php echo $this->name == 'Confirmaciones'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> CONFIRMACIONES</a></li>
                 <li><a href="<?php echo Router::url('/matrimonios'); ?>"<?php echo $this->name == 'Matrimonios'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> MATRIMONIOS</a></li>
@@ -43,6 +46,18 @@
             <?php echo $this->fetch('content'); ?>
             <?php #echo $this->element('sql_dump'); ?>
         </section>
+        
+        <!-- Modal box for the view function -->
+        <!-- <a href="#openModal">Open Modal</a> -->
+
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <p id="p_modalContent">This is a sample modal box that can be created using the powers of CSS3.</p>
+            </div>
+        </div>
+        
+        
         <script type="text/javascript">
             baseDir = '<?php echo Router::url('/') == '/' ? '' : Router::url('/'); ?>';
             controller = '<?php echo strtolower($this->name); ?>';
