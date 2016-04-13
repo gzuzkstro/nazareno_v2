@@ -1,5 +1,19 @@
 <?php
 echo '<h2>Bautizos</h2>';
+echo $this->Form->create('Bautizo', array(
+    'inputDefaults' => array(
+        'between' => '<br>',
+        'type' => 'text',
+        'required' => 'false'
+    )
+));
+
+echo $this->Form->input('nombres');
+echo $this->Form->input('numero');
+?>
+<input type="submit" value="Buscar">
+<?php
+
 echo '<p style="font-size:18px; text-align:center;"><i class="fa fa-eye"></i> = Ver detalles - ';
 echo '<i class="fa fa-edit"></i> = Modificar registro - ';
 echo '<i class="fa fa-times"></i> = Eliminar registro - ';
@@ -53,7 +67,20 @@ if(count($bautizos)) {
 <?php
 foreach($bautizos as $e) {
     
-    $modalContent = $e['Bautizo']['nombres'].$e['Bautizo']['apellidos'];
+    $modalContent1 = "<b>Nro </b>".$e['Bautizo']['numero'];
+    $modalContent2 = "<p><b>Nombre </b>".$e['Bautizo']['nombres']." ".$e['Bautizo']['apellidos']."</p>";
+    $modalContent2 .= "<p><b>Padres </b>".$e['Bautizo']['padre']." y ".$e['Bautizo']['madre']."</p>";
+    $modalContent2 .= "<p><b>Nacido en </b>".$e['Bautizo']['ciudad_nacimiento']." , ".$e['Bautizo']['estado_nacimiento']." , "
+        .$e['Bautizo']['pais_nacimiento']." <b>el día </b>".$e['Bautizo']['fecha_nacimiento']."</p>";
+    $modalContent2 .= "<p><b>Bautizado el día </b>".$e['Bautizo']['fecha']."</p>";
+    $modalContent2 .= "<p><b>Padrinos </b>".$e['Bautizo']['padrino']." y ".$e['Bautizo']['madrina']."</p>";
+    $modalContent2 .= "<p><b>Ministros </b>".$e['Bautizo']['ministro']." , <b>Observaciones </b>".($e['Bautizo']['observaciones']?$e['Bautizo']['observaciones']:"No tiene observaciones")."</p>";
+    $modalContent2 .= "<p><b>Notas </b>".($e['Bautizo']['nota']?$e['Bautizo']['nota']:"No tiene nota")."</p>";
+    $modalContent2 .= "<p><b>Registro Civil </b>".$e['Bautizo']['prefectura_numero']." - folio ".$e['Bautizo']['prefectura_folio']
+        ." - libro ".$e['Bautizo']['prefectura_libro']." - año ".$e['Bautizo']['prefectura_fecha']."</p>";
+    $modalContent3 = "<br><p><b>Lo que certifico - El párroco</b></p><p>Rafael María Calvo, diác</p>";
+    
+    
     $nombre = preg_replace('/ (.+)$/', '', $e['Bautizo']['nombres']);
     $apellido = preg_replace('/ (.+)$/', '', $e['Bautizo']['apellidos']);
 ?>
@@ -67,7 +94,7 @@ foreach($bautizos as $e) {
 		<td><?php echo $e['Bautizo']['ministro']; ?></td>
 		<td><b>Libro: </b><?php echo $e['Bautizo']['libro']; ?><br><b>Folio: </b><?php echo $e['Bautizo']['folio']; ?><br><b>Número: </b><?php echo $e['Bautizo']['numero']; ?></td>
 		<td class="actions_buttons">
-            <a href="#openModal" onclick="fillModal(' <?php echo  $modalContent; ?> ');"><i class="fa fa-eye"></i></a>
+            <a href="#openModal" onclick="fillModal(' <?php echo  $modalContent1."','".$modalContent2."','".$modalContent3; ?> ');"><i class="fa fa-eye"></i></a>
             &nbsp&nbsp
         <?php
 		if($rol == 'A') {

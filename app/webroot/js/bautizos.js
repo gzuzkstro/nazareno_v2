@@ -72,6 +72,8 @@ $(document).ready(function(){
     
 });
 
-   function fillModal (content) {
-    var x = document.getElementById('p_modalContent').innerHTML = content;
-}
+   function fillModal (content1, content2, content3) {
+       document.getElementById('p_modalContent1').innerHTML = content1;
+       document.getElementById('p_modalContent2').innerHTML = content2;
+       document.getElementById('p_modalContent3').innerHTML = content3;
+   }

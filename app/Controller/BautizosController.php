@@ -10,7 +10,23 @@ class BautizosController extends AppController {
     );
 
     function index() {
-        $this->Paginator->settings = $this->paginate;
+        
+        $where_options = array();
+        
+        //Filtrar por nombre
+        if(isset($this->request->data['Bautizo']['nombres']) && $this->request->data['Bautizo']['nombres']!=""){
+            $where_options['Bautizo.nombres LIKE'] = $this->request->data['Bautizo']['nombres'].'%';
+        }
+        
+        //Filtrar por numero de registro
+        if(isset($this->request->data['Bautizo']['numero']) && $this->request->data['Bautizo']['numero']!=""){
+            $where_options['Bautizo.numero LIKE'] = '%'.$this->request->data['Bautizo']['numero'];
+        }
+        
+        $this->Paginator->settings = array(
+            'conditions' => $where_options,
+            'limit' => 10
+        );
         $this->set('bautizos', $this->Paginator->paginate('Bautizo'));
     }
     
@@ -36,11 +52,12 @@ class BautizosController extends AppController {
                 $this->request->data['Bautizo']['estado_nacimiento'] = $this->request->data['Bautizo']['estado_nacimiento_2'];
                 $this->request->data['Bautizo']['ciudad_nacimiento'] = $this->request->data['Bautizo']['ciudad_nacimiento_2'];
             }
-
+            
+            //Esta validación se podría 
             $existeBautizo = $this->Bautizo->find('first', array(
                 'conditions' => array(
-                    'Bautizo.libro' => $this->request->data('Bautizo.libro'),
-                    'Bautizo.folio' => $this->request->data('Bautizo.folio'),
+                    //'Bautizo.libro' => $this->request->data('Bautizo.libro'),
+                    //'Bautizo.folio' => $this->request->data('Bautizo.folio'),
                     'Bautizo.numero' => $this->request->data('Bautizo.numero')
                 )
             ));

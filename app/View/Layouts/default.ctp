@@ -6,6 +6,7 @@
 		echo $this->Html->meta('icon')."\n";
 		echo "\t".$this->Html->css('estilo')."\n";
 		echo "\t".$this->Html->css('font-awesome')."\n";
+        echo "\t".$this->Html->css('bootstrap.min')."\n";
                 echo "\t".$this->Html->css('jquery.datetimepicker')."\n";
         ?>
         <meta charset="utf-8">
@@ -15,10 +16,6 @@
 
         </header>
         <nav id="nav">
-            <form id="buscador">
-                    <input type="text" id="buscar" placeholder="Buscar">
-                    <i class="fa fa-search"></i>
-            </form>
             <ul>
                 <li><a href="<?php echo Router::url('/'); ?>"<?php echo $this->name == 'Pages'?'class="active"':'' ?>><i class="fa fa-home"></i> INICIO</a></li>
                 <li><a href="<?php echo Router::url('/bautizos'); ?>"<?php echo $this->name == 'Bautizos'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> BAUTIZOS</a></li>
@@ -51,9 +48,19 @@
         <!-- <a href="#openModal">Open Modal</a> -->
 
         <div id="openModal" class="modalDialog">
-            <div>
+            <div class="container" style="padding-top:20px">
                 <a href="#close" title="Close" class="close">X</a>
-                <p id="p_modalContent">This is a sample modal box that can be created using the powers of CSS3.</p>
+                <div class="row">
+                    <div id="p_modalContent1" class="col-sm-2">
+                        Primera columna - placeholder
+                    </div>
+                    <div id="p_modalContent2" class="col-sm-10">
+                        Segunda columna - placeholder
+                    </div>
+                    <div id="p_modalContent3" class="col-sm-12" style="text-align:center;">
+                        Otra fila - placeholder
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -65,6 +72,7 @@
         <?php echo $this->Html->script('jquery-1.10.2.min')."\n"; ?>
         <?php echo $this->Html->script('jquery.datetimepicker')."\n"; ?>
         <?php echo $this->Html->script('functions')."\n"; ?>
+        <?php echo $this->Html->script('bootstrap.min')."\n"; ?>
         <?php
             if($this->name == 'Pages')
                 echo $this->Html->script('pages')."\n";
