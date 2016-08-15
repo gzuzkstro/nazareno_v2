@@ -1,4 +1,27 @@
 $(document).ready(function(){
+    
+    // Added in version 2
+    
+    $('.date_time_picker').datetimepicker({
+        lang: 'es',
+        timepicker: false,
+        format: 'd/m/Y'
+    });
+    
+    /*
+    $('#datetimepicker_b1').datetimepicker({
+        lang: 'es',
+        timepicker: false,
+        format: 'd/m/Y'
+    });
+    
+    $('#datetimepicker_b2').datetimepicker({
+        lang: 'es',
+        timepicker: false,
+        format: 'd/m/Y'
+    });
+    
+    // -------------
     $('#datetimepicker1').datetimepicker({
         lang: 'es',
         timepicker: false,
@@ -9,7 +32,7 @@ $(document).ready(function(){
         lang: 'es',
         timepicker: false,
         format: 'd/m/Y'
-    });
+    });*/
 
 	$('#BautizoCiudadNacimiento').change(function(){
 		if($(this).val() == 'Otra') {

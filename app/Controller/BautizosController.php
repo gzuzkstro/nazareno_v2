@@ -23,6 +23,37 @@ class BautizosController extends AppController {
             $where_options['Bautizo.numero LIKE'] = '%'.$this->request->data['Bautizo']['numero'];
         }
         
+        //Filtrar por folio del registro
+        if(isset($this->request->data['Bautizo']['folio']) && $this->request->data['Bautizo']['folio']!=""){
+            $where_options['Bautizo.folio LIKE'] = '%'.$this->request->data['Bautizo']['folio'];
+        }
+        
+        //Filtrar por rango de fecha de nacimiento
+        if(isset($this->request->data['Bautizo']['fecha_nacimiento_1'])
+           && isset($this->request->data['Bautizo']['fecha_nacimiento_2'])
+           && $this->request->data['Bautizo']['fecha_nacimiento_1']!=""
+           && $this->request->data['Bautizo']['fecha_nacimiento_2']!=""
+          ){
+            $where_options["STR_TO_DATE(Bautizo.fecha_nacimiento, '%d/%m/%Y') >="] = 
+                $this->Bautizo->mysql_date($this->request->data['Bautizo']['fecha_nacimiento_1']);
+            
+            $where_options["STR_TO_DATE(Bautizo.fecha_nacimiento, '%d/%m/%Y') <="] = 
+                $this->Bautizo->mysql_date($this->request->data['Bautizo']['fecha_nacimiento_2']);
+        }
+        
+        //Filtrar por rango de fecha de bautizo
+        if(isset($this->request->data['Bautizo']['fecha_1'])
+           && isset($this->request->data['Bautizo']['fecha_2'])
+           && $this->request->data['Bautizo']['fecha_1']!=""
+           && $this->request->data['Bautizo']['fecha_2']!=""
+          ){
+            $where_options["STR_TO_DATE(Bautizo.fecha, '%d/%m/%Y') >="] = 
+                $this->Bautizo->mysql_date($this->request->data['Bautizo']['fecha_1']);
+            
+            $where_options["STR_TO_DATE(Bautizo.fecha, '%d/%m/%Y') <="] = 
+                $this->Bautizo->mysql_date($this->request->data['Bautizo']['fecha_2']);
+        }
+        
         $this->Paginator->settings = array(
             'conditions' => $where_options,
             'limit' => 10

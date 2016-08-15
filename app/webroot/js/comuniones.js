@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#datetimepicker').datetimepicker({
+    $('.date_time_picker').datetimepicker({
         lang: 'es',
         timepicker: false,
         format: 'd/m/Y'
@@ -13,4 +13,21 @@ $(document).ready(function() {
       window.open(baseDir + 'comuniones/certificado/' + id + '/' + motivo, '_blank').focus();
     }
   });
+    
+    
+var botaoAdd = $('#add-comunion-boton'),
+    botoesWrap = $('#personas-comunion'),
+    template = $.trim($('#add-comunion').html()),
+    nextItem = 1;
+
+		function addNewInputToTheForm() {
+			var newItemHtml = template.replace(/::num/g, nextItem++);
+			botoesWrap.append(newItemHtml);
+		}
+
+		botaoAdd.on('click', function(e) {
+			e.preventDefault();
+			addNewInputToTheForm();
+		});
 });
+

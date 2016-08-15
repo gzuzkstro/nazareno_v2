@@ -1,5 +1,13 @@
 <?php
 class Bautizo extends AppModel {
+    
+    public function mysql_date($date_string){
+        
+        $pieces = explode("/",$date_string);
+    
+        return $pieces[2]."-".$pieces[1]."-".$pieces[0];
+    }
+    
     public $validate = array(
     	'nombres' => array(
 			'rule' => '/^[A-Za-zá-úÁ-ÚñÑ ]{2,50}$/',

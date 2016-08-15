@@ -22,7 +22,10 @@
                 <ul class="sub_menu" <?php echo $this->name == 'Bautizos'?'':'style="display:none;"' ?>>
                     <li><a href="<?php echo Router::url('/bautizos/agregar'); ?>"><i class="fa fa-plus"></i> Agregar</a></li>
                 </ul>
-                <li><a href="<?php echo Router::url('/comuniones'); ?>"<?php echo $this->name == 'Comuniones'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> COMUNIONES</a></li>
+                <li><a href="<?php echo Router::url('/communions'); ?>"<?php echo $this->name == 'Communions'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> COMUNIONES</a></li>
+                <ul class="sub_menu" <?php echo $this->name == 'Communions'?'':'style="display:none;"' ?>>
+                    <li><a href="<?php echo Router::url('/communions/agregar'); ?>"><i class="fa fa-plus"></i> Agregar</a></li>
+                </ul>
                 <li><a href="<?php echo Router::url('/confirmaciones'); ?>"<?php echo $this->name == 'Confirmaciones'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> CONFIRMACIONES</a></li>
                 <li><a href="<?php echo Router::url('/matrimonios'); ?>"<?php echo $this->name == 'Matrimonios'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> MATRIMONIOS</a></li>
                 <li><a href="<?php echo Router::url('/documentos'); ?>"<?php echo $this->name == 'Documentos'?'class="active"':'' ?>><i class="fa fa-file-text-o"></i> DOCUMENTOS</a></li>
@@ -49,12 +52,12 @@
 
         <div id="openModal" class="modalDialog">
             <div class="container" style="padding-top:20px">
-                <a href="#close" title="Close" class="close">X</a>
+                <a href="#close" title="Close" class="close_b"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
                 <div class="row">
-                    <div id="p_modalContent1" class="col-sm-2">
+                    <div id="p_modalContent1" class="col-sm-3">
                         Primera columna - placeholder
                     </div>
-                    <div id="p_modalContent2" class="col-sm-10">
+                    <div id="p_modalContent2" class="col-sm-9">
                         Segunda columna - placeholder
                     </div>
                     <div id="p_modalContent3" class="col-sm-12" style="text-align:center;">
@@ -78,7 +81,7 @@
                 echo $this->Html->script('pages')."\n";
             if($this->name == 'Bautizos')
                 echo $this->Html->script('bautizos')."\n";
-            if($this->name == 'Comuniones')
+            if($this->name == 'Communions')
                 echo $this->Html->script('comuniones')."\n";
             if($this->name == 'Confirmaciones')
                 echo $this->Html->script('confirmaciones')."\n";
