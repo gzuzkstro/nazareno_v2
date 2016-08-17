@@ -26,7 +26,10 @@
                 <ul class="sub_menu" <?php echo $this->name == 'Communions'?'':'style="display:none;"' ?>>
                     <li><a href="<?php echo Router::url('/communions/agregar'); ?>"><i class="fa fa-plus"></i> Agregar</a></li>
                 </ul>
-                <li><a href="<?php echo Router::url('/confirmaciones'); ?>"<?php echo $this->name == 'Confirmaciones'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> CONFIRMACIONES</a></li>
+                <li><a href="<?php echo Router::url('/confirmations'); ?>"<?php echo $this->name == 'Confirmaciones'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> CONFIRMACIONES</a></li>
+                <ul class="sub_menu" <?php echo $this->name == 'Confirmations'?'':'style="display:none;"' ?>>
+                    <li><a href="<?php echo Router::url('/confirmations/agregar'); ?>"><i class="fa fa-plus"></i> Agregar</a></li>
+                </ul>
                 <li><a href="<?php echo Router::url('/matrimonios'); ?>"<?php echo $this->name == 'Matrimonios'?'class="active"':'' ?>><i class="fa fa-angle-double-right"></i> MATRIMONIOS</a></li>
                 <li><a href="<?php echo Router::url('/documentos'); ?>"<?php echo $this->name == 'Documentos'?'class="active"':'' ?>><i class="fa fa-file-text-o"></i> DOCUMENTOS</a></li>
                 <?php
@@ -83,7 +86,7 @@
                 echo $this->Html->script('bautizos')."\n";
             if($this->name == 'Communions')
                 echo $this->Html->script('comuniones')."\n";
-            if($this->name == 'Confirmaciones')
+            if($this->name == 'Confirmations')
                 echo $this->Html->script('confirmaciones')."\n";
             if($this->name == 'Documentos')
                 echo $this->Html->script('documentos')."\n";

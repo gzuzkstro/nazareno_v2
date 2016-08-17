@@ -15,9 +15,8 @@ class Communion extends AppModel {
 	public $validate = array(
 		'fecha' => array(
 			'notempty' => array(
-				'rule' => '/^[A-Za-zá-úÁ-ÚñÑ ]{2,50}$/',
-				'message' => 'Debe tener entre 2 y 50 caracteres',
-			),
+    		'rule' => array('date', 'dmy')
+            )
 		),
 		'ministro' => array(
 			'notempty' => array(

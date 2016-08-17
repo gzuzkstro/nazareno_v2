@@ -811,3 +811,386 @@ Stack Trace:
 #3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-08-16 03:41:20 Error: Fatal Error (4): syntax error, unexpected '*' in [C:\xampp\htdocs\nazareno_v2\app\View\Communions\index.ctp, line 82]
+2016-08-16 03:41:20 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /nazareno_v2/communions
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 82)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 82, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 82, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-16 03:49:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 03:50:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 03:55:08 Error: [MissingActionException] Action Communions::eliminar() could not be found.
+Exception Attributes: array (
+  'controller' => 'Communions',
+  'action' => 'eliminar',
+)
+Request URL: /nazareno_v2/communions/eliminar/4
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\nazareno_v2\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(CommunionsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\nazareno_v2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CommunionsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-08-16 23:50:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 23:51:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 23:52:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 23:55:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 23:55:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-16 23:56:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 01:07:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 01:10:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 01:11:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 07:41:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 07:44:05 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [C:\xampp\htdocs\nazareno_v2\app\View\Communions\agregar.ctp, line 99]
+2016-08-17 07:44:05 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /nazareno_v2/communions/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 99, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 99, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 07:44:38 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\nazareno_v2\app\View\Communions\agregar.ctp, line 121]
+2016-08-17 07:44:38 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /nazareno_v2/communions/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 121)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 121, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 121, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 07:45:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 07:45:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 07:48:19 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\xampp\htdocs\nazareno_v2\app\Model\Communion.php, line 38]
+2016-08-17 07:48:19 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /nazareno_v2/communions/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 07:51:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 07:52:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 08:11:13 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\nazareno_v2\app\View\Communions\agregar.ctp, line 27]
+2016-08-17 08:11:13 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /nazareno_v2/communions/modificar/8
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 27, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 27, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 08:20:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:17:40 Error: Fatal Error (1): Call to undefined method ConfirmationsController::save() in [C:\xampp\htdocs\nazareno_v2\app\Controller\ConfirmationsController.php, line 55]
+2016-08-17 09:17:40 Error: [FatalErrorException] Call to undefined method ConfirmationsController::save()
+Request URL: /nazareno_v2/confirmations/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 09:19:41 Error: Fatal Error (1): Call to undefined method ConfirmationsController::invalidFields() in [C:\xampp\htdocs\nazareno_v2\app\Controller\ConfirmationsController.php, line 55]
+2016-08-17 09:19:41 Error: [FatalErrorException] Call to undefined method ConfirmationsController::invalidFields()
+Request URL: /nazareno_v2/confirmations/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 09:20:50 Error: Fatal Error (1): Call to undefined method ConfirmationsController::invalidFields() in [C:\xampp\htdocs\nazareno_v2\app\Controller\ConfirmationsController.php, line 55]
+2016-08-17 09:20:50 Error: [FatalErrorException] Call to undefined method ConfirmationsController::invalidFields()
+Request URL: /nazareno_v2/confirmations/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 09:20:54 Error: Fatal Error (1): Call to undefined method ConfirmationsController::invalidFields() in [C:\xampp\htdocs\nazareno_v2\app\Controller\ConfirmationsController.php, line 55]
+2016-08-17 09:20:54 Error: [FatalErrorException] Call to undefined method ConfirmationsController::invalidFields()
+Request URL: /nazareno_v2/confirmations/agregar
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 55, Array)
+#3 C:\xampp\htdocs\nazareno_v2\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-17 09:22:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:22:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:23:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:24:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:24:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:24:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:24:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:28:24 Error: [MissingTableException] Table comunions for model Comunion was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'comunions',
+  'class' => 'Comunion',
+  'ds' => 'default',
+)
+Request URL: /nazareno_v2/comuniones
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\lib\Cake\Model\Model.php(3243): Model->setSource('comunions')
+#1 C:\xampp\htdocs\nazareno_v2\lib\Cake\Model\Model.php(2696): Model->getDataSource()
+#2 C:\xampp\htdocs\nazareno_v2\lib\Cake\Controller\Component\PaginatorComponent.php(197): Model->find('all', Array)
+#3 C:\xampp\htdocs\nazareno_v2\app\Controller\ComunionesController.php(15): PaginatorComponent->paginate('Comunion')
+#4 [internal function]: ComunionesController->index()
+#5 C:\xampp\htdocs\nazareno_v2\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(ComunionesController), Array)
+#6 C:\xampp\htdocs\nazareno_v2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\nazareno_v2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ComunionesController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-08-17 09:29:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:31:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:31:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:31:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-17 09:32:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /nazareno_v2/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\nazareno_v2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

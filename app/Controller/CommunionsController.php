@@ -58,21 +58,27 @@ public $uses = array('Communion','Common');
     } 
   }
   
-  /*
+  
   function modificar($id) {
-    $this->Communion->id = $id;
+      
+      $this->Communion->id = $id;
     
     if ($this->request->is('put')) {
       
       $existeCommunion = $this->Communion->find('first', array(
         'conditions' => array(
-          'Communion.libro' => $this->request->data('Communion.libro')
+          'Communion.numero' => $this->request->data('Communion.numero')
         )
       ));
-      
+        
+         //delete everything
+        $this->Communion->delete($id,true);
+        
+        $this->Communion->id = $id;
+        
     if ($existeCommunion && $existeCommunion['Communion']['id'] != $id) {
-         $this->Session->setFlash('Ya existe una comunión con el mismo libro, folio y número', 'default', array(), 'bad');
-      } elseif ($this->Communion->save($this->request->data)) {
+        $this->Session->setFlash('Ya existe una comunión con el mismo libro, folio y número', 'default', array(), 'bad');
+      } elseif ($this->Communion->saveAll($this->request->data)) {
         $this->Session->setFlash('Se ha modificado la comunión con éxito', 'default', array(), 'good');
       } else {
         $this->Session->setFlash('Ha ocurrido un error modificando la comunión', 'default', array(), 'bad');
@@ -80,19 +86,19 @@ public $uses = array('Communion','Common');
     }
     
     $this->request->data = $this->Communion->read();
-    $this->render('agregar');
+    $this->set('comunion', $this->request->data);
+      $this->render('agregar');
   }
-  */
-    /*
+    
   function eliminar($id) {
     if(parent::isAdmin() && $id != null) {
-      $this->Communion->delete($id);
-      $this->Session->setFlash('Comunión eliminada con éxito', 'default', array(), 'good');
+      $this->Common->delete($id);
+      $this->Session->setFlash('Registro de comunión eliminado con éxito', 'default', array(), 'good');
       $this->redirect(array('action' => 'index'));
     } else {
       throw new NotFoundException('La página no existe');
     }
-  }*/
+  }
   
   function certificado($id, $motivo = null) {
     Configure::write('debug',0);

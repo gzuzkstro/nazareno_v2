@@ -67,28 +67,19 @@ if(count($comuniones)) {
 <?php
 foreach($comuniones as $e) {
     
-    $modalContent1 = "Hola";
-    $modalContent2 = "Hola";
-    $modalContent3 = "Hola";
-    /*
-    $modalContent1 = "<b>Nro </b>".$e['Bautizo']['numero'];
-    $modalContent1 .= "<br><br><b>Nota marginal</b><br>".$e['Bautizo']['nota_marginal'];
-    $modalContent2 = "<p><b>Nombre </b>".$e['Bautizo']['nombres']." ".$e['Bautizo']['apellidos']."</p>";
-    $modalContent2 .= "<p><b>Padres </b>".$e['Bautizo']['padre']." y ".$e['Bautizo']['madre']."</p>";
-    $modalContent2 .= "<p><b>Nacido en </b>".$e['Bautizo']['ciudad_nacimiento']." , ".$e['Bautizo']['estado_nacimiento']." , "
-        .$e['Bautizo']['pais_nacimiento']." <b>el día </b>".$e['Bautizo']['fecha_nacimiento']."</p>";
-    $modalContent2 .= "<p><b>Bautizado el día </b>".$e['Bautizo']['fecha']."</p>";
-    $modalContent2 .= "<p><b>Padrinos </b>".$e['Bautizo']['padrino']." y ".$e['Bautizo']['madrina']."</p>";
-    $modalContent2 .= "<p><b>Ministros </b>".$e['Bautizo']['ministro']." , <b>Observaciones </b>".($e['Bautizo']['observaciones']?$e['Bautizo']['observaciones']:"No tiene observaciones")."</p>";
-    $modalContent2 .= "<p><b>Notas </b>".($e['Bautizo']['nota']?$e['Bautizo']['nota']:"No tiene nota")."</p>";
-    $modalContent2 .= "<p><b>Registro Civil </b>".$e['Bautizo']['prefectura_numero']." - folio ".$e['Bautizo']['prefectura_folio']
-        ." - libro ".$e['Bautizo']['prefectura_libro']." - año ".$e['Bautizo']['prefectura_fecha']."</p>";
-    //$modalContent3 = "<br><p><b>Lo que certifico - El párroco</b></p><p>Rafael María Calvo, diác</p>";
+    
+    $modalContent1 = "<b>Nro </b>".$e['Communion']['numero'];
+    $modalContent2 = "<p><b>Nombre </b>".$e['Common']['nombres']." ".$e['Common']['apellidos']."</p>";
+    $modalContent2 .= "<p><b>Padres </b>".$e['Common']['padre']." y ".$e['Common']['madre']."</p>";
+    $modalContent2 .= "<p><b>Realiza su comunión el día </b>".$e['Communion']['fecha']."</p>";
+    $modalContent2 .= "<p><b>Catequista </b>".$e['Communion']['catequista']."</p>";
+    $modalContent2 .= "<p><b>Ministro </b>".$e['Communion']['ministro']."</p>";
+    $modalContent3 = "<br><p><b>Lo que certifico - El párroco</b></p><p>Rafael María Calvo, diác</p>";
     $modalContent3 = "";
     
-    
+    /*
     $nombre = preg_replace('/ (.+)$/', '', $e['Bautizo']['nombres']);
-    $apellido = preg_replace('/ (.+)$/', '', $e['Bautizo']['apellidos']); */
+    $apellido = preg_replace('/ (.+)$/', '', $e['Bautizo']['apellidos']);*/
 ?>
 	<tr>
         <td><?php echo $e['Common']['nombres']; ?></td>
@@ -103,7 +94,7 @@ foreach($comuniones as $e) {
 		?>    
         <a href="<?php echo Router::url(array('action' => 'modificar', $e['Communion']['id'])); ?>"><i class="fa fa-edit"></i></a>
             &nbsp&nbsp
-            <a href="<?php echo Router::url(array('action' => 'eliminar', $e['Communion']['id'])); ?>" onclick="javascript: return confirm('¿Está seguro que desea eliminar?');" alt="Eliminar"><i class="fa fa-times"></i></a><?php } ?>
+            <a href="<?php echo Router::url(array('action' => 'eliminar', $e['Common']['id'])); ?>" onclick="javascript: return confirm('¿Está seguro que desea eliminar?');" alt="Eliminar"><i class="fa fa-times"></i></a><?php } ?>
             &nbsp&nbsp
             
             <a href="<?php echo Router::url('/communions/certificado/' . $e['Common']['id']); ?>" target="_blank"><i class="fa fa-file-o"></i> </a>
